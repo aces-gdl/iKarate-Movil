@@ -74,7 +74,7 @@ export const Create = (props) => {
           required
           value={values.foreName}
           onChangeText={(value) => handleChange('foreName', value)}
-        />
+        /> 
         <InputX
           label="Apodo"
           required
