@@ -21,7 +21,7 @@ function Input({style, ...other}, ref) {
   }));
 
   return (
-    <TextInput
+    <TextInput 
       ref={inputRef}
       theme={{colors: {background: theme.colors.surface}}}
       {...other}

@@ -17,7 +17,7 @@ const MainScreen = ({navigation}) => {
 
   const _changeLocale = useCallback(() => {
     changeLocale(
-      localeProvider.id == LOCALES.HINDI.id ? LOCALES.ENGLISH : LOCALES.HINDI,
+      localeProvider.id == LOCALES.SPANISH.id ? LOCALES.ENGLISH : LOCALES.SPANISH,
     );
   }, [changeLocale, localeProvider.id]);
 

@@ -6,6 +6,8 @@ import Routes from '../Routes/index';
 import Home from '../../Screens/Home';
 import App from '../../Screens/App';
 import Profile from '../../Screens/Profile';
+import Alumnos from '../../Screens/Alumnos/index';
+
 import {IconX, ICON_TYPE} from '../../Icons';
 import {createStackNavigator} from '@react-navigation/stack';
 import useAppTheme from '../../Themes/Context';
@@ -32,6 +34,21 @@ const HomeStackScreen = () => {
         }}
         name="homestackscreen"
         component={Home}
+      />
+      <Stack.Screen
+        options={{
+          title: 'ALUMNOS',
+          headerStyle: [
+            NavigationStyles.header_statusBar,
+            {backgroundColor: theme.colors.header},
+          ],
+          headerTitleStyle: [
+            NavigationStyles.headerTitle,
+            {color: theme.colors.headerTitle},
+          ],
+        }}
+        name={Routes.STUDENTS_SCREEN}
+        component={Alumnos}
       />
     </Stack.Navigator>
   );

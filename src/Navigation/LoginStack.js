@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 export default props => {
   return (
-    <Stack.Navigator headerMode="none" initialRouteName={Routes.APP_INTRO}>
+    <Stack.Navigator headerMode="none" initialRouteName={Routes.LOGIN_SCREEN}>
       <Stack.Screen name={Routes.APP_INTRO} component={AppIntro} />
       <Stack.Screen name={Routes.LOGIN_SCREEN} component={Login} />
     </Stack.Navigator>

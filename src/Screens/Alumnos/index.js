@@ -6,6 +6,7 @@ import {Container, HeaderButton} from '../../Components';
 import NavigationStyles from '../../Styles/NavigationStyles';
 import useAppTheme from '../../Themes/Context';
 import { ICON_TYPE } from '../../Icons';
+import {Browse} from './Browse';
 
 const MainScreen = ({navigation}) => {
   const {theme} = useAppTheme();
@@ -32,6 +33,7 @@ const MainScreen = ({navigation}) => {
       },
     });
   }, [navigation, theme.colors.headerTitle]);
+  
   return (
     <LoadingActionContainer fixed>
       <Container
@@ -39,9 +41,7 @@ const MainScreen = ({navigation}) => {
           justifyContent: 'center',
           padding: 20,
         }}>
-        <Text style={{fontSize: 20, padding: 20, textAlign: 'center'}}>
-          Profile Screen
-        </Text>
+          <Browse />
       </Container>
     </LoadingActionContainer>
   );
@@ -54,7 +54,7 @@ MainScreen.navigationOptions = ({navigation, screenProps}) => {
       NavigationStyles.header_statusBar,
       {backgroundColor: theme.colors.header},
     ],
-    headerTitle: 'Profile',
+    headerTitle: 'Alumnos',
     headerTintColor: theme.colors.headerTitle,
     headerTitleStyle: [
       NavigationStyles.headerTitle,

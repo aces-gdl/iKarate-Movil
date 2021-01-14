@@ -30,16 +30,16 @@ export const AppContextProvider = props => {
 
   const logout = useCallback(() => {
     Alert.alert(
-      'Please comfirm Logout',
-      'Are you sure you want to logout from the app',
+      'Confirmar acción',
+      'Esta seguro de querer salir?',
       [
         {
-          text: 'Yes, Logout',
+          text: 'Si, Salir',
           onPress: _logoutUser,
         },
         {
           type: 'cancel',
-          text: 'No, Stay here',
+          text: 'No, Seguir en la aplicación',
         },
       ],
     );

@@ -2,7 +2,7 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '10.0'
-target 'easy_boiler' do
+target 'test9' do
  
 config = use_native_modules!
 
@@ -13,7 +13,7 @@ config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
 
 
-  target 'easy_boilerTests' do
+  target 'test9Tests' do
     inherit! :complete
     # Pods for testing
   end
@@ -28,10 +28,10 @@ config = use_native_modules!
   end
 end
 
-target 'easy_boiler-tvOS' do
-  # Pods for easy_boiler-tvOS
+target 'test9-tvOS' do
+  # Pods for test9-tvOS
 
-  target 'easy_boiler-tvOSTests' do
+  target 'test9-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

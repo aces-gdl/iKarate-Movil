@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ImageBackground} from 'react-native';
 import LoadingActionContainer from '../../Components/LoadingActionContainer';
 import {Container, HeaderButton} from '../../Components';
 import useAppTheme from '../../Themes/Context';
@@ -48,21 +48,26 @@ const MainScreen = ({routes, navigation}) => {
         style={{
           padding: 10,
         }}>
-        <View style={{alignItems: 'center'}}>
-          <Image
-            source={require('../../../hero/3.png')}
-            style={{
-              width: metrics.screenWidth,
-              aspectRatio: 1,
-              resizeMode: 'contain',
-            }}
-          />
-        </View>
-        <Text style={{fontSize: 20, textAlign: 'center', padding: 20}}>
-          Home screen
-        </Text>
+        <Image
+          source={require('../../../hero/images/karate.jpeg')}
+          style={{
+            aspectRatio: 1,
+            width: metrics.screenWidth,
+            resizeMode: 'contain',
+          }}
+        />
+        <Image
+          source={require('../../../hero/images/Mariaelva.jpg')}
+          style={{
+            aspectRatio: 1,
+            width: metrics.screenWidth,
+            resizeMode: 'contain',
+          }}
+        />
         <View style={{padding: 20, margin: 10, backgroundColor: 'white'}}>
-          <Text style={{textAlign: 'center', fontSize: 18}}>Welcome</Text>
+          <Text style={{textAlign: 'center', fontSize: 18}}>
+            Bienvenido !!!
+          </Text>
           <Text style={{textAlign: 'center', fontFamily: Fonts.type.italic}}>
             {username + ' ' + password}
           </Text>

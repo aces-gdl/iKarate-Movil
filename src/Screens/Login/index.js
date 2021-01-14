@@ -44,7 +44,7 @@ export default () => {
     Keyboard.dismiss();
 
     if (!username || !password) {
-      showInfoToast('Username and password are mandatory, try again !');
+      showInfoToast('Usuario y clave son requeridos, intentelo de nuevo !');
     }
 
     login({
@@ -79,12 +79,12 @@ export default () => {
               fontFamily: Fonts.type.italic,
               color: theme.colors.primaryText,
             }}>
-            Provide any details to continue
+            Digite usuario y clave para entrar al sistema
           </Text>
         </Section>
         <Section>
           <InputX
-            label="USER NAME"
+            label="USUARIO"
             // mode="outlined"
             ref={inputUserName}
             style={{backgroundColor: '#fafafa'}}
@@ -104,7 +104,7 @@ export default () => {
             value={password}
             // mode="outlined"
             style={{backgroundColor: '#fafafa'}}
-            label="PASSWORD"
+            label="CLAVE"
             returnKeyType={'go'}
             onSubmitEditing={loginUser}
             onChangeText={text =>
@@ -127,7 +127,7 @@ export default () => {
           <ButtonX
             mode={'text'}
             onPress={() => panelRef.current.show()}
-            label=" NEED HELP "
+            label=" NECESITA AYUDA ? "
           />
         </Section>
       </LoadingActionContainer>

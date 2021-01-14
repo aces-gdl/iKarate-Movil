@@ -1,5 +1,5 @@
 {
-  "name": "easy_boiler",
+  "name": "test9",
   "version": "0.63.0",
   "license": "public",
   "private": true,
@@ -37,6 +37,7 @@
     "react-native-animatable": "^1.3.3",
     "react-native-code-push": "^6.2.1",
     "react-native-gesture-handler": "^1.6.1",
+    "react-native-image-picker": "^2.3.3",
     "react-native-keychain": "4.0.1",
     "react-native-modal": "^11.5.6",
     "react-native-paper": "^3.10.1",

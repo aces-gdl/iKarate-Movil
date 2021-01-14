@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.easy_boiler"
+        applicationId "com.test9"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 8
